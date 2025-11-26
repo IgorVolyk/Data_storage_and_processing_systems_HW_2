@@ -49,6 +49,7 @@ FROM information_schema.tables
 WHERE table_schema = 'public' 
 AND table_type = 'BASE TABLE';
 
+-- импортитруем данные из исходных CVS с помощью встроенных инструментов Dbeaver 
 -- Проверка количества записей во всех таблицах
 SELECT 
     'customer' as table_name,
